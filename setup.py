@@ -1,4 +1,3 @@
-
 import sys
 from shutil import rmtree
 from setuptools import setup, find_packages
@@ -21,18 +20,16 @@ setup(
     author="Stephen McDonald",
     author_email="steve@jupo.org",
     description="A Django reusable app providing the ability to send PGP "
-                "encrypted and multipart emails using the Django templating "
-                "system.",
+    "encrypted and multipart emails using the Django templating "
+    "system.",
     long_description=open("README.rst").read(),
     url="https://github.com/stephenmcd/django-email-extras",
     packages=find_packages(),
     zip_safe=False,
     include_package_data=True,
-    install_requires=[
-        "python-gnupg"
-    ],
+    install_requires=["python-gnupg"],
     extras_require={
-        'dev': [
+        "dev": [
             "sphinx-me",
         ]
     },
@@ -42,12 +39,10 @@ setup(
         "Intended Audience :: Developers",
         "Operating System :: OS Independent",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 2.6",
-        "Programming Language :: Python :: 2.7",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.3",
+        "Programming Language :: Python :: 3.7",
         "Framework :: Django",
         "Topic :: Communications :: Email",
         "Topic :: Security :: Cryptography",
-    ]
+    ],
 )
